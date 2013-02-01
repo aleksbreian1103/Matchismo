@@ -12,12 +12,13 @@
 
 // designated initializer
 - (id)initWithCardCount:(NSUInteger)cardCount
-              usingDeck:(Deck *)deck;
+              usingDeck:(Deck *)deck
+      selectedMatchMode:(NSUInteger)mode;
 
 - (void)flipCardAtIndex:(NSUInteger)index;
 
 - (Card *)cardAtIndex:(NSUInteger)index;
 
 @property (nonatomic, readonly) int score;
-
+@property (strong, nonatomic, readonly) NSString *lastResult;
 @end

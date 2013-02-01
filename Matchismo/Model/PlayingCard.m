@@ -14,15 +14,37 @@
 {
     int score = 0;
     
-    if ([otherCards count] == 1) {
-        PlayingCard *otherCard = [otherCards lastObject];
-        if ([otherCard.suit isEqualToString:self.suit]) {
-            score = 1;
-        } else if (otherCard.rank == self.rank) {
-            score = 4;
+    // copy otherCards to local array
+    NSArray *cards = [[NSArray alloc] initWithArray:otherCards];
+    for (int i = 0; i < [cards count]; i++) {
+        for (int j = i+1; j < [cards count]; j++) {
+            // Select cards
+            PlayingCard *card1 = cards[i];
+            PlayingCard *card2 = cards[j];
+            
+            // check for the same suit
+            if ([card1.suit isEqualToString:card2.suit]) {
+                score += 1;
+            }
+            // check for the same rank
+            if (card1.rank == card2.rank) {
+                score += 4;
+            }
         }
     }
     
+    // check self
+    for (PlayingCard *otherCard in otherCards) {
+        // check for the same suit
+        if ([self.suit isEqualToString:otherCard.suit]) {
+            score += 1;
+        }
+        // check for the same rank
+        if (self.rank == otherCard.rank) {
+            score += 4;
+        }
+    }
+
     return score;
 }
 

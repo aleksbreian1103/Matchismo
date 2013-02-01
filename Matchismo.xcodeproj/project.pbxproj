@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B23845EE16BBC992007FD761 /* cardback.png in Resources */ = {isa = PBXBuildFile; fileRef = B23845ED16BBC992007FD761 /* cardback.png */; };
 		B29B8AC216B2EDE4000FDC8A /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = B29B8AC116B2EDE4000FDC8A /* Card.m */; };
 		B29B8AC516B2EE22000FDC8A /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = B29B8AC416B2EE22000FDC8A /* Deck.m */; };
 		B29B8AC916B2F2B2000FDC8A /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = B29B8AC816B2F2B2000FDC8A /* PlayingCard.m */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B23845ED16BBC992007FD761 /* cardback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardback.png; sourceTree = "<group>"; };
 		B29B8AC016B2EDE4000FDC8A /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
 		B29B8AC116B2EDE4000FDC8A /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 		B29B8AC316B2EE22000FDC8A /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
@@ -116,9 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				B29CCB5A16B2DD70007AE862 /* MainStoryboard.storyboard */,
-				B29B8AC616B2EE27000FDC8A /* Model */,
 				B29CCB5D16B2DD70007AE862 /* CardGameViewController.h */,
 				B29CCB5E16B2DD70007AE862 /* CardGameViewController.m */,
+				B29B8AC616B2EE27000FDC8A /* Model */,
 				B29CCB4916B2DD70007AE862 /* Supporting Files */,
 			);
 			path = Matchismo;
@@ -133,6 +135,7 @@
 				B29CCB4B16B2DD70007AE862 /* InfoPlist.strings */,
 				B29CCB4E16B2DD70007AE862 /* main.m */,
 				B29CCB5016B2DD70007AE862 /* Matchismo-Prefix.pch */,
+				B23845ED16BBC992007FD761 /* cardback.png */,
 				B29CCB5416B2DD70007AE862 /* Default.png */,
 				B29CCB5616B2DD70007AE862 /* Default@2x.png */,
 				B29CCB5816B2DD70007AE862 /* Default-568h@2x.png */,
@@ -197,6 +200,7 @@
 				B29CCB5716B2DD70007AE862 /* Default@2x.png in Resources */,
 				B29CCB5916B2DD70007AE862 /* Default-568h@2x.png in Resources */,
 				B29CCB5C16B2DD70007AE862 /* MainStoryboard.storyboard in Resources */,
+				B23845EE16BBC992007FD761 /* cardback.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
